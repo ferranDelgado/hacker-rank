@@ -1,0 +1,35 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.61'
+    id 'idea'
+}
+apply plugin: 'kotlin'
+apply plugin: 'idea'
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib'
+
+    testCompile "org.codehaus.groovy:groovy-all:2.5.8"
+    testImplementation 'org.spockframework:spock-core:1.3-groovy-2.5'
+}
+
+idea {
+    module {
+        // just added these two lines
+        testSourceDirs += file('src/test/groovy')
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+wrapper {
+    gradleVersion = '5.6.2'
+}
+
+// Set the jvmTarget to 1.8 to support inlining
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
