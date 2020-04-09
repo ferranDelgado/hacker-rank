@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8a552e2-6ee4-4ae4-968a-4ae112bf8787" name="Default Changelist" comment="" />
+    <list default="true" id="d8a552e2-6ee4-4ae4-968a-4ae112bf8787" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/hackerrank/interview/string/SpecialStringAgainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/hackerrank/interview/string/SpecialStringAgainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/hackerrank/interview/hashmaps/SpecialStringAgain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/hackerrank/interview/hashmaps/SpecialStringAgain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/hackerrank/interview/string/SpecialStringAgain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/hackerrank/interview/string/SpecialStringAgain.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/hackerrank/interview/hashmaps/SpecialStringAgain.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/hackerrank/interview/hashmaps/SpecialStringAgain.groovy" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +44,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WwB9y2wGqDnpOPXkJZZ5ft8S5C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Spock" />
@@ -82,40 +94,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpecialStringAgain.count substr of #input">
-    <configuration name="SherlockAndTheValidString.abbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HackerRank.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hackerrank.interview.hashmaps.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hackerrank.interview.hashmaps" />
-      <option name="MAIN_CLASS_NAME" value="com.hackerrank.interview.hashmaps.SherlockAndTheValidString" />
-      <option name="METHOD_NAME" value="abbc" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SherlockAndTheValidString.is #input valid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HackerRank.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hackerrank.interview.hashmaps.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hackerrank.interview.hashmaps" />
-      <option name="MAIN_CLASS_NAME" value="com.hackerrank.interview.hashmaps.SherlockAndTheValidString" />
-      <option name="METHOD_NAME" value="is #input valid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpecialStringAgain.count substr of #input" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SpecialStringAgain">
+    <configuration name="SpecialStringAgain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HackerRank.test" />
       <extension name="coverage">
         <pattern>
@@ -125,13 +105,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hackerrank.interview.hashmaps" />
       <option name="MAIN_CLASS_NAME" value="com.hackerrank.interview.hashmaps.SpecialStringAgain" />
-      <option name="METHOD_NAME" value="count substr of #input" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpecialStringAgain.is #input special" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpecialStringAgain.between slow and fast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HackerRank.test" />
       <extension name="coverage">
         <pattern>
@@ -141,13 +120,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hackerrank.interview.hashmaps" />
       <option name="MAIN_CLASS_NAME" value="com.hackerrank.interview.hashmaps.SpecialStringAgain" />
-      <option name="METHOD_NAME" value="is #input special" />
+      <option name="METHOD_NAME" value="between slow and fast" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpecialStringAgain.is #input valid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpecialStringAgain.compare old and new" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HackerRank.test" />
       <extension name="coverage">
         <pattern>
@@ -157,7 +136,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hackerrank.interview.hashmaps" />
       <option name="MAIN_CLASS_NAME" value="com.hackerrank.interview.hashmaps.SpecialStringAgain" />
-      <option name="METHOD_NAME" value="is #input valid" />
+      <option name="METHOD_NAME" value="compare old and new" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialStringAgain.longest equal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HackerRank.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hackerrank.interview.hashmaps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hackerrank.interview.hashmaps" />
+      <option name="MAIN_CLASS_NAME" value="com.hackerrank.interview.hashmaps.SpecialStringAgain" />
+      <option name="METHOD_NAME" value="longest equal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialStringAgain.really long" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HackerRank.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hackerrank.interview.hashmaps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hackerrank.interview.hashmaps" />
+      <option name="MAIN_CLASS_NAME" value="com.hackerrank.interview.hashmaps.SpecialStringAgain" />
+      <option name="METHOD_NAME" value="really long" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpecialStringAgain.count substr of #input" />
-        <item itemvalue="JUnit.SpecialStringAgain.is #input special" />
-        <item itemvalue="JUnit.SpecialStringAgain.is #input valid" />
-        <item itemvalue="JUnit.SherlockAndTheValidString.is #input valid" />
-        <item itemvalue="JUnit.SherlockAndTheValidString.abbc" />
+        <item itemvalue="JUnit.SpecialStringAgain" />
+        <item itemvalue="JUnit.SpecialStringAgain.between slow and fast" />
+        <item itemvalue="JUnit.SpecialStringAgain.really long" />
+        <item itemvalue="JUnit.SpecialStringAgain.compare old and new" />
+        <item itemvalue="JUnit.SpecialStringAgain.longest equal" />
       </list>
     </recent_temporary>
   </component>
@@ -190,12 +201,23 @@
       <workItem from="1584225398888" duration="5242000" />
       <workItem from="1584273113055" duration="6917000" />
       <workItem from="1584484535424" duration="39000" />
-      <workItem from="1586356013101" duration="15715000" />
+      <workItem from="1586356013101" duration="21828000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -210,6 +232,11 @@
           <line>41</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/hackerrank/interview/string/SpecialStringAgain.kt</url>
+          <line>49</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -217,7 +244,7 @@
         <watch expression="n / s.length" language="kotlin" />
       </configuration>
       <configuration name="JUnit">
-        <watch expression="ints[from]" language="kotlin" />
+        <watch expression="s[i]" language="kotlin" />
         <watch expression="ints[to]" language="kotlin" />
         <watch expression="group" />
       </configuration>
