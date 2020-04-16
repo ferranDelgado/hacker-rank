@@ -15,8 +15,8 @@ class BuildPalindrome extends Specification {
 //        "bac"         | "bac"  || "aba"
 //        "jdfh"        | "fds"  || "dfhfd"
 //        "a"           | "a"    || "aa"
-        "naaaaaaaaaa" | "n"    || "naaaaaaaaaan"
-//        "naba"        | "n"    || "naban"
+        "naa" | "n"    || "naan"
+        "naba"        | "n"    || "naban"
 //        "naba"        | "aban" || "nabaaban"
     }
 

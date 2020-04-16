@@ -80,7 +80,7 @@ fun buildPalindrome2(a: String, b: String): String {
 }
 
 fun buildPalindrome(a: String, b: String): String {
-    var palindrom = "-1"
+    var palindrom: String? = null
     a.indices.forEach { i ->
         var localPalindrom = "-1"
         b.indices.reversed().forEach { j ->
@@ -89,49 +89,53 @@ fun buildPalindrome(a: String, b: String): String {
             if (a[i] == b[j]) {
                 var aIndex = i + 1
                 var bIndex = j
-                var isMoving = true
-                var plusA = 5
-                var plusB = 5
+                var plusA = -1
+                var plusB = -1
                 while (plusA + plusB != 0) {
                     plusA = 0
                     plusB = 0
-                    if (aIndex <= a.length && bIndex >= 0) {
-                        val subA = a.substring(i, aIndex)
-                        val subB = b.subSequence(bIndex, j + 1)
+                    val palindromeBoth = if ((aIndex + 1) <= a.length && (bIndex - 1) >= 0) {
+                        val subA = a.substring(i, aIndex + 1)
+                        val subB = b.subSequence(bIndex - 1, j + 1)
                         println("A&B   | $subA  $subB")
-                        if ("$subA$subB".isPalindrome()) {
-                            plusA = 1
-                            plusB = 1
-                        }
-                    }
+                        "$subA$subB".palindromeOrNull()
+                    } else null
 
-                    if (aIndex < a.length && plusA + plusA == 0) {
-                        val subA = a.substring(i, aIndex)
-                        val subB = b.subSequence(bIndex, j + 1)
+                    val palindromeA = if ((aIndex + 1) <= a.length) {
+                        val subA = a.substring(i, aIndex + 1)
+                        val subB = b.substring(bIndex, j + 1)
                         println("A     | $subA  $subB")
-                        if ("$subA$subB".isPalindrome()) {
+                        "$subA$subB".palindromeOrNull()
+                    } else null
+
+                    val palindromeB = if ((bIndex - 1) >= 0) {
+                        val subA = a.substring(i, aIndex)
+                        val subB = b.substring(bIndex - 1, j + 1)
+                        println("B     | $subA  $subB")
+                        "$subA$subB".palindromeOrNull()
+                    } else null
+
+                    palindrom = listOfNotNull(palindrom, palindromeBoth, palindromeA, palindromeB).min()
+                    when(palindrom) {
+                        palindromeBoth -> {
+                            plusA = 1
+                            plusB = 1
+                        }
+                        palindromeA -> {
                             plusA = 1
                         }
-                    }
-
-                    if (bIndex >= 0 && plusA + plusA == 0) {
-                        val subA = a.substring(i, aIndex)
-                        val subB = b.subSequence(bIndex, j + 1)
-                        println("B     | $subA  $subB")
-                        if ("$subA$subB".isPalindrome()) {
+                        palindromeB -> {
                             plusB = 1
                         }
                     }
-
                     aIndex += plusA
                     bIndex -= plusB
                 }
             }
         }
-        palindrom = decidePalindrome(palindrom, localPalindrom)
     }
 
-    return palindrom
+    return palindrom ?: "-1"
 }
 
 private fun decidePalindrome(a: String, b: String): String {
@@ -150,6 +154,10 @@ private fun decidePalindrome(a: String, b: String): String {
 }
 
 private fun String.isPalindrome(): Boolean = this == this.reversed()
+private fun String.palindromeOrNull(): String? =
+    if (isPalindrome()) {
+        this
+    } else null
 
 fun main(args: Array<String>) {
     val scan = Scanner(System.`in`)
