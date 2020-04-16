@@ -11,13 +11,20 @@ class BuildPalindrome extends Specification {
         BuildPalindromeKt.buildPalindrome(a, b) == s
 
         where:
-        a             | b      || s
-//        "bac"         | "bac"  || "aba"
-//        "jdfh"        | "fds"  || "dfhfd"
+        a      | b     || s
+        "bac"  | "bac" || "aba"
+        "jdfh" | "fds" || "dfhfd"
 //        "a"           | "a"    || "aa"
-        "naa" | "n"    || "naan"
-        "naba"        | "n"    || "naban"
+        "naa"  | "n"   || "naan"
+        "n"    | "aan" || "naan"
+        "naba" | "n"   || "naban"
 //        "naba"        | "aban" || "nabaaban"
+    }
+
+    def "sort"() {
+        expect:
+        BuildPalindromeKt.sort(["aa", "aba", "zaza"]) == "aba"
+//        BuildPalindromeKt.sort(["aa", "cc"]) == "aba"
     }
 
 }
