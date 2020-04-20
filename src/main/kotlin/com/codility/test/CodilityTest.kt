@@ -1,8 +1,8 @@
 package com.codility.test
 
-fun forTest(a: List<Int>) = solution(a.toIntArray())
+fun forTestTest(a: List<Int>) = solution(a.toIntArray())
 
-fun solution(A: IntArray): Int {
+fun solutionTest(A: IntArray): Int {
     var min = 0
     A.sort()
     val filter = A.filter { it > 0 }

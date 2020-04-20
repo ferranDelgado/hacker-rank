@@ -10,7 +10,7 @@ class CodelyTest extends Specification {
         def input = [1, 3, 6, 4, 1, 2]
 
         expect:
-        CodilityTestKt.forTest(input) == 5
+        CodilityTestKt.forTestTest(input) == 5
 
     }
 
@@ -19,7 +19,7 @@ class CodelyTest extends Specification {
         def input = [-1, -3]
 
         expect:
-        CodilityTestKt.forTest(input) == 1
+        CodilityTestKt.forTestTest(input) == 1
     }
 
 
@@ -28,7 +28,7 @@ class CodelyTest extends Specification {
         def input = [-1, -3, 1]
 
         expect:
-        CodilityTestKt.forTest(input) == 2
+        CodilityTestKt.forTestTest(input) == 2
     }
 
     def "negative numbers and more more"() {
@@ -36,7 +36,7 @@ class CodelyTest extends Specification {
         def input = [-1, -3, 1, 2]
 
         expect:
-        CodilityTestKt.forTest(input) == 2
+        CodilityTestKt.forTestTest(input) == 2
     }
 
     def "1 but not the first"() {
@@ -44,7 +44,7 @@ class CodelyTest extends Specification {
         def input = [-1, -3, 2, 4, 5, 6, 9]
 
         expect:
-        CodilityTestKt.forTest(input) == 1
+        CodilityTestKt.forTestTest(input) == 1
     }
 
 }
