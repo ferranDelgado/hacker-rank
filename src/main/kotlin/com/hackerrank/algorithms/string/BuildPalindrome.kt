@@ -2,30 +2,7 @@ package com.hackerrank.algorithms.string
 
 import java.util.*
 
-
-fun createPalindrom(a: String, aFrom: Int, aTo: Int, b: String, bFrom: Int, bTo: Int): String {
-    val subA = a.substring(aFrom, aTo)
-    val subB = b.substring(bFrom, bTo)
-
-    val subAHasNext = aTo < a.length
-    val subBHasNext = bTo < b.length
-    return when {
-        subAHasNext && subBHasNext -> {
-            val middle = if (a[aTo] < b[bTo]) a[aTo] else b[bTo]
-            subA + middle + subB.reversed()
-        }
-        subAHasNext -> {
-            val middle = a[aTo]
-            subA + middle + subB.reversed()
-        }
-        subBHasNext -> {
-            val middle = b[bTo]
-            subA + middle + subB.reversed()
-        }
-        else -> subA + subB.reversed()
-    }
-}
-
+class Node 
 /*
 https://www.hackerrank.com/challenges/challenging-palindromes/problem
  * Complete the buildPalindrome function below.
