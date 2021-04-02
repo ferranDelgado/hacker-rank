@@ -4,15 +4,6 @@ import java.io.InputStream
 import java.lang.IllegalStateException
 import java.util.Scanner
 
-data class GraphMeta(val connected: Long, val disconnectedCities: Long) {
-    fun cost(cities: Int, libraryCost: Long, roadCost: Long): Long {
-        val all = connected + disconnectedCities
-        val oneLib: Long = all * libraryCost + (cities - all) * roadCost
-        val allLibs: Long = cities.toLong() * libraryCost
-        return minOf(oneLib, allLibs)
-    }
-}
-
 fun connectedComponents(n: Int, cities: Map<Int, List<Int>>): Long {
     val visited = BooleanArray(n + 1)
     var connected = 0L
