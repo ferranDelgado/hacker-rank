@@ -26,7 +26,7 @@ fun countTriplets(arr: Array<Long>, r: Long): Long {
     val nextSecond: MutableMap<Long, Long> = mutableMapOf()
     val nextThird: MutableMap<Long, Long> = mutableMapOf()
     var count = 0L
-
+listOf("", "", "").sorted().joinToString()
     arr.forEach {
         nextThird[it]?.let { value ->
             count += value
@@ -77,15 +77,61 @@ fun countTriplets(arr: Array<Long>, r: Long): Long {
 //}
 
 fun main(args: Array<String>) {
-    val nr = readLine()!!.trimEnd().split(" ")
+//    val nr = readLine()!!.trimEnd().split(" ")
+//
+//    val n = nr[0].toInt()
+//
+//    val r = nr[1].toLong()
+//
+//    val arr = readLine()!!.trimEnd().split(" ").map { it.toLong() }.toTypedArray()
+//
+//    val ans = countTriplets(arr, r)
+//
+//    println(ans)
+//
 
-    val n = nr[0].toInt()
+    //println(listOf("hack", "hacker", "hackerrank").sortedDescending().joinToString(""))
 
-    val r = nr[1].toLong()
 
-    val arr = readLine()!!.trimEnd().split(" ").map { it.toLong() }.toTypedArray()
+    val a = 649578
 
-    val ans = countTriplets(arr, r)
 
-    println(ans)
+    fun paths(num: Int): Int {
+        var c = num
+        fun Int.weight(): Int{
+            return when(this) {
+                0, 4, 6, 9 -> 1
+                8 -> 2
+                else -> 0
+            }
+        }
+        var r = 0
+        while(c > 0) {
+            val mod = c%10
+            r += mod.weight()
+            c /= 10
+        }
+        return r
+    }
+
+    println(paths(a))
+
+
+
+//    println(fib(4))
+}
+
+fun fibonacci(n: Int): Int {
+    if (n <= 1) {
+        return n
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+fun fib(n: Int): List<Int> {
+    val result = mutableListOf(0, 1)
+    (2 until n).forEach {
+        result.add(result[it - 2] + result[it - 1])
+    }
+    return result.subList(0, n)
 }
